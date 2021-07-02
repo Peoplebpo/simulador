@@ -923,7 +923,8 @@
         $filename = "simulacion.pdf";
         file_put_contents($filename, $pdf);
         $dompdf->stream($filename);
-        
+    
+    
     ?>
 
 <?php

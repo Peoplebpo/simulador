@@ -5,7 +5,6 @@
 
  	mysqli_set_charset($conn,"utf8");
 
-
 	if(mysqli_connect_errno()){
 
 		echo 'Conexion Fallida : ', mysqli_connect_error();

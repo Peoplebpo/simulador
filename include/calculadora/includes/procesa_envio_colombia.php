@@ -204,8 +204,8 @@
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 
-    require("../../../vendor/phpmailer/class.phpmailer.php");
-    require("../../../vendor/phpmailer/class.smtp.php");
+    require("../lib/phpmailer/class.phpmailer.php");
+    require("../lib/phpmailer/class.smtp.php");
 
     date_default_timezone_set('America/Argentina/Buenos_Aires');
 

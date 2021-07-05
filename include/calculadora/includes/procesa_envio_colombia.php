@@ -8,30 +8,6 @@
         margin: 0;
         }
 
-        @font-face {
-            font-family: 'Geometria';
-            src: url('lib/dompdf/fonts/Geometria.ttf') format(truetype); 
-        }
-
-        @font-face {
-            font-family: 'Geometria-ExtraBold';
-            src: url('lib/dompdf/fonts/Geometria-ExtraBold.ttf') format(truetype); 
-        }
-
-        @font-face {
-            font-family: 'Geometria-Heavy';
-            src: url('lib/dompdf/fonts/Geometria-Heavy.ttf') format(truetype);
-        }
-
-        @font-face {
-            font-family: 'Geometria-Light';
-            src: url('url(lib/dompdf/fonts/Geometria-Light.ttf') format(truetype);
-        }
-
-        @font-face {
-            font-family: 'Geometria-LightItalic';
-            src: url('lib/dompdf/fonts/Geometria-LightItalic.ttf') format(truetype);
-        }
 
         .titulo{
             font-family: 'Geometria-ExtraBold', sans-serif;
@@ -56,7 +32,7 @@
         }
 
         .texto_persona{
-            font-family: '/Geometria-Light', Arial, Helvetica, sans-serif;
+            font-family: 'Geometria-Light', Arial, Helvetica, sans-serif;
             font-size: 1rem;
             color: #312945;
             font-weight: normal;

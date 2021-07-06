@@ -358,9 +358,22 @@ $(document).ready(function () {
     // inicio cuadro mensajes descripcion de ayuda 
 
     $("#email").one("click",(function () {
-        alertify.set({ delay: 8000 });
-        alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Ingresar un correo valido para que pueda ser enviada la simulación sin problemas.");
-        
+      //  alertify.set({ delay: 8000 });
+      //  alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Ingresar un correo valido para que pueda ser enviada la simulación sin problemas.");
+    Swal.fire({
+        icon: undefined,
+        html: `<label class='titulo_alert'>RECUERDA</label><br><label>Ingresa un correo válido para recibir la simulación de la soluciones que selecciones.</label><img src='images/advertencia.png'>`,
+        toast: true,
+        showConfirmButton:false,
+        position: 'bottom-end',
+        background: '#c9d219'
+    })  
+
+
+
+
+
+
         })
     );
 

@@ -358,15 +358,26 @@ $(document).ready(function () {
     // inicio cuadro mensajes descripcion de ayuda 
 
     $("#email").one("click",(function () {
-      //  alertify.set({ delay: 8000 });
-      //  alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Ingresar un correo valido para que pueda ser enviada la simulación sin problemas.");
+      
     Swal.fire({
         icon: undefined,
-        html: `<label class='titulo_alert'>RECUERDA</label><br><label>Ingresa un correo válido para recibir la simulación de la soluciones que selecciones.</label><img src='images/advertencia.png'>`,
+        html: `
+        <div class="alert d-flex align-items-center" role="alert"
+        style="background-color: #c9d219; padding: 5px; width: 320px;">
+        <p><span style="color: #322a45; font-size: 14px;">RECUERDA</span>
+        <br>
+        <br>
+        <span style="font-size: 16px;">Ingresa un correo válido para recibir la simulación de la soluciones que selecciones.</span></p>
+        <div>
+        <img src="images/advertencia.png">
+        </div>
+        </div>`,
         toast: true,
         showConfirmButton:false,
-        position: 'bottom-end',
-        background: '#c9d219'
+        position: 'bottom-start',
+        background: '#c9d219',
+        padding: '1px',
+        timer:8000
     })  
 
 
@@ -379,9 +390,28 @@ $(document).ready(function () {
 
     $("#ventas_mes").one("click",(function () {
 
-        alertify.set({ delay: 8000 });
-        alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Para que la simulación se ajuste a sus necesidades ingrese una volumetria valida.");
-        
+       // alertify.set({ delay: 8000 });
+       // alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Para que la simulación se ajuste a sus necesidades ingrese una volumetria valida.");
+          Swal.fire({
+        icon: undefined,
+        html: `
+        <div class="alert d-flex align-items-center" role="alert"
+        style="background-color: #c9d219; padding: 5px; width: 320px;">
+        <p><span style="color: #322a45; font-size: 14px;">RECUERDA</span>
+        <br>
+        <br>
+        <span style="font-size: 16px;">Para que la simulación se ajuste a sus necesidades ingrese una volumetria valida.</span></p>
+        <div>
+        <img src="images/advertencia.png">
+        </div>
+        </div>`,
+        toast: true,
+        showConfirmButton:false,
+        position: 'bottom-start',
+        background: '#c9d219',
+        padding: '1px',
+        timer:8000
+    })
         })
     );
 

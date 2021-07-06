@@ -947,17 +947,214 @@
     $mensajeHtml 	= nl2br($mensaje);
     $archivo = 'simulacion.pdf';
     $mail->AddAttachment($archivo,$archivo);
-    $mail->Body 	= "
+    $mail->Body 	= '
 
-    <html> 
-    <body> 
-    <h1>SIMULACIÓN DE SERVICIOS A CONTRATAR</h1>
-    <p><h3>Don:</h3> {$nombre_solicitante}</p>
-    <p><h3>Don:</h3> {$pais}</p>
-    <p><a href='https://b24-nuujfg.bitrix24.site/volver_llamar/'><img src='https://adnprogen.com.ar/wp-content/uploads/2015/04/botones-web-quiero-que-me-llamen.png'></img></a></p>
-    </body> 
-    </html>
-    <br />"; // Texto del email en formato HTML
+    <html>
+    <head>
+    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    
+    @import url("http://fonts.cdnfonts.com/css/geometria");
+    
+    .footer {
+        
+       font-family: "Geometria", sans-serif;
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       background-color: #231F36;
+       color: white;
+       text-align: center;
+       
+    }
+    
+    .tf {
+        font-size: 0.5rem;
+        background-color: #373050;
+        font-family: Geometria, sans-serif;
+    }
+    
+    .imgf {
+        background-color: #231F36;
+        width:40px; 
+        height:40px;
+    }
+    
+    .t {
+        color: #C9D115;
+    }
+    
+    .if {
+        width:30%;
+    }
+    
+    .ps{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .a{
+        background-color: #231F36;
+    }
+    
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    
+        <div class="container" style="background-color: #e8e5e5;
+           
+            width: 800px;  margin-left: 20px; margin-right: 20px;">
+    
+            <div style=" background-image: url(https://i.ibb.co/94dScWh/Enmascarar-grupo-1.png);
+            background-size: contain; background-repeat: no-repeat;
+            background-position: bottom; margin: bottom 50px;">
+    
+                <div style="text-align: center; background-color: #231F36;">
+                        
+                            <img class="img-fluid"   
+                            src="https://i.ibb.co/7JNbDfj/q1.png" alt="q1" alt="">
+    
+                            <div style="text-align: center; background-color: #C9D115; height: 50px;">
+                        
+                            <p class="ps" style="text-align: center; color: #231F36; padding-top:10px; font-family: geometria, sans-serif; font-style:italic;">
+                            La solucion más sencilla, para la
+                            <strong>transformación digital</strong>  
+                            y <strong>aumentar tus ventas.</strong> </p>
+                    </div>
+    
+                </div>
+    
+                <div style="text-align: center; padding-top:20px">
+    
+                    <img style="width: 160px; height: 200px;" class="img-fluid" src="https://i.ibb.co/x7GBBnc/i-Stock-1226500620.png"  >
+                    <img style="width: 160px; height: 200px;" class="img-fluid" src="https://i.ibb.co/gr8ckfC/i-Stock-1018966316.png" >
+                    <img style="width: 160px; height: 200px;" class="img-fluid" src="https://i.ibb.co/z46DXXg/rio-slum001.png" >
+                    <img style="width: 160px; height: 200px;" class="img-fluid" src="https://i.ibb.co/c3qwCss/i-Stock-1202266282.png" >
+    
+                </div>
+                
+                
+    
+                <div style="width: 600px;  margin-left: auto; margin-right: auto;">
+                        
+                            <h2 style=" color: #231F36;font-family: geometria, sans-serif; font-size: 2rem; font-style:italic;">
+                            <strong >Hola</strong>  
+                            </h2>
+    
+                            <h2 style=" color: #231F36;font-family: geometria, sans-serif; font-size: 2.5rem; font-style:italic;">
+                                <strong >Alberto Monsalve Castillo</strong>  
+                            </h2>
+    
+                            <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
+                                Mi nombre es Juan y soy el encargado del área comercial en PEOPLE, 
+                                queremos agradecerte por tu interés en nuestros servicios y contarte un 
+                                poco más sobre nosotros, llevamos 18 años en el mercado ayudando a empresas 
+                                como la tuya a prepararse para esta era digital.  
+                            </p>
+    
+                            <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
+                                En PEOPLE somos el aliado estratégico que te ayuda a optimizar los procesos 
+                                de tu empresa basándonos en la sincronización efectiva  entre la tecnología, 
+                                las  personas y el análisis. Nuestros resultados son el reflejo del cumplimiento de 
+                                indicadores, con los mejores estándares mundiales, respecto al desempeño, calidad, 
+                                niveles de servicio, satisfacción de clientes y aumento en la rentabilidad del negocio 
+                                generando más ganancias y utilidades..  
+                            </p>
+    
+                            <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
+                                Encontrarás  un archivo adjunto con la simulación de los servicios que elegiste, 
+                                recuerda que nos adaptamos a las necesidades de tu negocio, dale clic al siguiente 
+                                botón y nos pondremos en contacto de inmediato.   
+                            </p>
+                                
+                            
+                    </div>
+    
+                    <div style="text-align: center; padding:30px;">
+                        <a href="https://b24-nuujfg.bitrix24.site//volver_llamar" target="_blank" style="background: #C9D218; padding: 20px; color: #373050;
+                        border-radius: 26px; text-decoration: none; font-family: geometria, sans-serif;">
+                        <img src="https://i.ibb.co/FBrCtBX/call-center.png" style="width: 20PX;"> TE LLAMAMOS</a>
+                    </div>
+    
+                    <div style="width: 600px;  margin-left: auto; margin-right: auto; padding:30px;" >
+    
+                        <p style=" color: #707070;font-family: geometria, sans-serif; font-size: 0.8rem; text-align: justify;">
+                            Los valores indicados en la presente simulación son solo referenciales, es decir, 
+                            son estimativos, no vinculantes y no exactos; el valor definitivo de la solución 
+                            quedará determinado al momento de la generación del acuerdo comercial.  
+                        </p>
+                            
+    
+                    </div>
+    
+                <div class="footer">
+    
+                <br>
+    
+                    
+                        <a style="text-decoration:none;color:black; margin-bottom: 20px;" href="https://www.facebook.com/peopleBPOChile" target="_blank">
+    
+                            <img src="https://i.postimg.cc/ydWkFJ9s/Trazado-15.png" class="img-fluid imgf">  
+    
+                        </a>
+    
+                        <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://twitter.com/peoplebpo" target="_blank">
+    
+                            <img src="https://i.postimg.cc/F1Xz5D6H/Trazado-14.png" class="img-fluid imgf">  
+    
+                        </a>
+    
+                        <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://www.instagram.com/peoplebpo" target="_blank">
+    
+                            <img src="https://i.postimg.cc/3RWZfCVq/Grupo-13.png" class=" imgf">  
+    
+                        </a> 
+    
+                        <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://www.youtube.com/channel/UCR5iPM3CZQXsrxM6ZSoMRrA" target="_blank">
+    
+                            <img src="https://i.postimg.cc/CLbs2Krw/Grupo-12.png" class="img-fluid imgf">  
+    
+                        </a>
+    
+                        <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://www.linkedin.com/company/peoplebpo-com/?originalSubdomain=co" target="_blank">
+    
+                            <img src="https://i.ibb.co/Lzggb4v/linkedin.png" class="img-fluid imgf">  
+    
+                        </a>
+    
+                
+                    <br>
+    
+                    <p style="color: #C9D218; font-family: geometria, sans-serif;">PEOPLE BPO Janequeo 2212, Concepción, Chile<br>
+                                    Darse de baja Gestionar preferencias</p> 
+                    <p></p>  
+                
+    
+                    <div style="text-align: center; background-color: #373050; ">
+                        
+                        <p style="text-align: center; color: WHITE; font-family: geometria, sans-serif; font-size: 0.7rem;">
+                            © 2021 ALL RIGHTS RESERVED BY:  PEOPLE BPO</p>
+                            
+                    </div>
+    
+                </div>
+            
+            </div>
+    
+                      
+    
+        </div>
+    
+    
+    </body>
+    </html> 
+    
+    '; // Texto del email en formato HTML
 
     $mail->AltBody = "{$mensaje} \n\n "; // Texto sin formato HTML
     $mail->SMTPOptions = array(

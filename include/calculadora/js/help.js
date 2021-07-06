@@ -515,9 +515,13 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'Gestión Redes Sociales',
-            text: 'Contenido Gestión Redes Sociales',
+            title: 'Gestión de RRSS',
+            html: '<p style="text-align: justify;"><strong >Redes Sociales:</strong> Potenciamos tus redes sociales posicionando tu marca con contenido de calidad, aumentando seguidores y multiplicando tus ventas. En People tendrás a tu disposición community manager y diseñador que se encargarán de la estrategia de contenidos que tú necesitas.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -526,8 +530,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'IVR',
-            text: 'Contenido IVR',
+            html: '<p style="text-align: justify;"><strong >IVR (Respuesta de Voz Interactiva):</strong> Mejora tu productividad automatizando consultas repetitivas. Crea un sistema de IVR para enrutar llamadas de manera precisa utilizando el reconocimiento de voz. Logra una campaña de voz que cumpla 100% con la regulación. ¡IVR - Poderoso y fácil de usar!.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -536,8 +544,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'BPO',
-            text: 'Contenido BPO',
+            html: '<p style="text-align: justify;"><strong >BPO (Externalización de procesos):</strong> Destaca tu negocio con el servicio de externalización de procesos empresariales PEOPLE. Brindamos apoyo en sus procesos adaptando sus necesidades en oportunidades de negocio que generan valores agregados.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -556,8 +568,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Contact Center',
-            text: 'Contenido Contact Center',
+            html: '<p style="text-align: justify;"><strong >Contact Center:</strong> Un centro de llamadas potente que facilita el contacto con tus clientes, tenemos herramientas y servicios multicanal brindando soluciones de la más alta calidad al menor costo. ¡Aumenta tus ganancias con resultados de calidad!</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -565,9 +581,13 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'E-commerce',
-            text: 'Contenido E-commerce',
+            title: 'E-Commerce',
+            html: '<p style="text-align: justify;"><strong >Tienda Online - Ecommerce:</strong> Empieza a vender tus productos y servicios en línea, creamos tu tienda online a medida según tus necesidades, fácil administración, carrito de compras, pagos seguros. Tu proyecto digital fácil, rápido y automatizado.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -576,8 +596,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Customer Experience',
-            text: 'Contenido Customer Experience',
+            html: '<p style="text-align: justify;"><strong >Customer Experience:</strong> Brinda experiencias únicas pensadas en cada cliente, garantizando que cada interacción con su marca sea un éxito.  Cliente Incógnito, Valoración de Experiencia, Investigación, Desarrollo de Experiencia, y muchos más.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -586,8 +610,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'CRM',
-            text: 'Contenido CRM',
+            html: '<p style="text-align: justify;"><strong >CRM - (Gestión de clientes):</strong> Da a los clientes una resolución rápida y fácil a sus problemas. Le ayudamos a ofrecer una experiencia conectada con un conjunto de servicios de colaboración todo en uno. ¡Un CRM que reúne todas sus funciones empresariales!  </p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -596,8 +624,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Consultoria',
-            text: 'Contenido Consultoria',
+            html: '<p style="text-align: justify;"><strong >Consultoría:</strong> ¡Especialistas en crecimiento! Ofrecemos la mejor asesoría para el crecimiento de tu marca, te ayudamos a transformar tu negocio a través de estrategias adaptadas a tus necesidades, y enfocadas en el uso de la tecnología.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -606,8 +638,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Marketing Digital',
-            text: 'Contenido Marketing Digital',
+            html: '<p style="text-align: justify;"><strong >Marketing Digital:</strong> En estos últimos años la presencia digital se ha convertido en un paso esencial para toda marca. En People creamos estrategias de marketing digital que llegan a tu audiencia ideal, en el momento y lugar adecuado cautivando y convirtiendo ese contacto en más ventas. </p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 

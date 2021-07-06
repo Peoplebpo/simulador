@@ -975,144 +975,17 @@ echo '
     $mensajeHtml 	= nl2br($mensaje);
     $archivo = 'simulacion.pdf';
     $mail->AddAttachment($archivo,$archivo);
-    $mail->Body 	= '
+    $mail->Body 	= "
 
-    <html>
-    <head>
-    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <style>
-    
-    @import url("http://fonts.cdnfonts.com/css/geometria");
-    
-    .footer {
-        
-       font-family: "Geometria", sans-serif;
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       background-color: #231F36;
-       color: white;
-       text-align: center;
-       
-    }
-    
-    
-    .tf {
-        font-size: 0.5rem;
-        background-color: #373050;
-        font-family: "Geometria", sans-serif;
-    }
-    
-    
-    .imgf {
-        background-color: #231F36;
-        width:40px; 
-        height:40px;
-    }
-    
-    .t {
-        color: #C9D115;
-    }
-    
-    .if {
-        width:30%;
-    }
-    
-    .ps{
-        font-size: 1rem;
-    }
-    
-    .a{
-        background-color: #231F36;
-    }
-    
-    </style>
-    
-    </head>
-    
-    <body>
-    
-    
-    
-        <div class="container" style="background-color: #e8e5e5;">
-    
-            <div style="text-align: center; background-color: #231F36;">
-                    
-                        <img class="img-fluid"   
-                        src="https://i.ibb.co/7JNbDfj/q1.png" alt="q1" alt="">
-    
-                        <div style="text-align: center; background-color: #C9D115; height: 50px;">
-                    
-           <p class="ps" style="text-align: center; color: #231F36;">
-                        <strong>solucion más sencilla, para la</strong>  
-                        transformación digital 
-                        <strong>y</strong> aumentar tus ventas.</p>
-                </div>
-    
-    
-            </div>
-            
-              
-    
-            <h2>Contenido</h2>
-            <p>Datos del correo</p>
-    
-            <div class="footer">
-    
-            <br>
-    
-                    <a style="text-decoration:none;color:black; margin-bottom: 20px;  href="https://www.facebook.com/peopleBPOChile" target="_blank"> 
-                    
-                        <img src="https://i.postimg.cc/ydWkFJ9s/Trazado-15.png" class="img-fluid imgf">
-    
-                    </a>
-    
-                    <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://twitter.com/peoplebpo" target="_blank">
-    
-                    <img src="https://i.postimg.cc/F1Xz5D6H/Trazado-14.png" class="img-fluid imgf">  
-    
-                    </a>
-    
-                    <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://www.instagram.com/peoplebpo" target="_blank">
-    
-                        <img src="https://i.postimg.cc/3RWZfCVq/Grupo-13.png" class=" imgf">  
-    
-                    </a> 
-    
-                    <a style="text-decoration:none;color:black; margin-left:20px; margin-bottom: 20px;" href="https://www.youtube.com/channel/UCR5iPM3CZQXsrxM6ZSoMRrA" target="_blank">
-    
-                    <img src="https://i.postimg.cc/CLbs2Krw/Grupo-12.png" class="img-fluid imgf">  
-    
-                    </a>
-    
-            
-                  <br>
-                 <img class="if" src="https://i.postimg.cc/JzwTBMby/g23.png" class="img-fluid">  
-            
-    
-            <br>
-    
-            <h4 class="tf">© 2021 ALL RIGHTS RESERVED BY:  PEOPLE BPO</h4>
-    
-            </div>
-    
-                      
-    
-        </div>
-    
-        <?php
-    
-        require("footer.php");
-    
-    
-    
-    </body>
-    </html> 
-    
-    
-    '; // Texto del email en formato HTML
+    <html> 
+    <body> 
+    <h1>SIMULACIÓN DE SERVICIOS A CONTRATAR</h1>
+    <p><h3>Don:</h3> {$nombre_solicitante}</p>
+    <p><h3>Don:</h3> {$pais}</p>
+    <p><a href='https://b24-nuujfg.bitrix24.site/volver_llamar/'><img src='https://adnprogen.com.ar/wp-content/uploads/2015/04/botones-web-quiero-que-me-llamen.png'></img></a></p>
+    </body> 
+    </html>
+    <br />"; // Texto del email en formato HTML
 
     $mail->AltBody = "{$mensaje} \n\n "; // Texto sin formato HTML
     $mail->SMTPOptions = array(

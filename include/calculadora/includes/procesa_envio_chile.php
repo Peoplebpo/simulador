@@ -1075,7 +1075,7 @@ echo '
                             </h2>
     
                             <h2 style=" color: #231F36;font-family: geometria, sans-serif; font-size: 2.5rem; font-style:italic;">
-                                <strong >Alberto Monsalve Castillo</strong>  
+                                <strong >'.$nombre_solicitante.'</strong>  
                             </h2>
     
                             <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">

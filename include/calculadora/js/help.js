@@ -376,8 +376,11 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'Diseño Marca',
-            text: 'Contenido Diseño marca',
+            title: 'Diseño de Marca',
+            html: '<p style="text-align: justify;"><strong >Diseño e identidad de Marca:</strong> La creación de una marca inolvidable es la clave para atraer a tu público objetivo y posibles clientes. Más que un nombre y un logo, creamos un concepto que transmita tu propósito y filosofía, definiendo tu identidad corporativa, storytelling, tono de comunicación, aplicaciones de marca, diseño de logo, isotipo, packing y mucho más</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
         })
     });
@@ -387,8 +390,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'E-Commerce',
-            text: 'Contenido E-Commerce',
+            html: '<p style="text-align: justify;"><strong >Tienda Online - Ecommerce:</strong> Empieza a vender tus productos y servicios en línea, creamos tu tienda online a medida según tus necesidades, fácil administración, carrito de compras, pagos seguros. Tu proyecto digital fácil, rápido y automatizado.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -397,8 +404,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'SAC',
-            text: 'Contenido SAC',
+            html: '<p style="text-align: justify;"><strong >Servicio de Atención al Cliente SAC:</strong> Nos encargamos de la gestión de servicio al cliente. Mejora las interacciones con tus clientes ofreciendo una experiencia conectada con servicios todo en uno, atención al cliente, ventas, cobranzas y más. Usamos la Inteligencia Artificial para transformar tu empresa.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -406,9 +417,13 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'Marketing',
-            text: 'Contenido Marketing',
+            title: 'Marketing Digital',
+            html: '<p style="text-align: justify;"><strong >Marketing Digital:</strong> En estos últimos años la presencia digital se ha convertido en un paso esencial para toda marca. En People creamos estrategias de marketing digital que llegan a tu audiencia ideal, en el momento y lugar adecuado cautivando y convirtiendo ese contacto en más ventas. </p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -416,9 +431,13 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'Botón de Llamada desde tu Web',
-            text: 'Ofrece a tus clientes la posibilidad de ponerse en contacto de forma inmediata, desde cualquier parte del mundo tus clientes estarán a un click, ahorra costos y tiempo aumentando tus ventas, estableciendo relaciones más estrechas con tus clientes, mejorando tu servicio al cliente y mucho más.',
+            title: 'Click To Call',
+            html: '<p style="text-align: justify;"><strong >Botón de Llamada desde tu Web:</strong> Ofrece a tus clientes la posibilidad de ponerse en contacto de forma inmediata, desde cualquier parte del mundo tus clientes estarán a un click, ahorra costos y tiempo aumentando tus ventas, estableciendo relaciones más estrechas con tus clientes, mejorando tu servicio al cliente y mucho más. </p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -427,8 +446,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Ejecutivos',
-            text: 'Contenido Ejecutivos',
+            html: '<p style="text-align: justify;"><strong >Ejecutivos:</strong> Humanizamos tus procesos con ejecutivos orientados en gestionar eficientemente las diferentes interacciones con tus clientes como asesoría, venta, postventa, recobros y mucho más.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -437,8 +460,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Back Office',
-            text: 'Contenido Back Office',
+            html: '<p style="text-align: justify;"><strong >Back Office:</strong> ¡Te hacemos la vida más fácil! Mientras te enfocas en que tu negocio crezca, nosotros gestionamos de manera calificada todos los procesos administrativos, contabilidad, seguimiento de clientes, gestión de recursos humanos y más.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -447,8 +474,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Whatsapp',
-            text: 'Contenido Whatsapp',
+            html: '<p style="text-align: justify;"><strong >Botón Whatsapp en Tu Web:</strong> ¡Conversa con tus clientes! Acelera tus ventas con el botón de whatsapp en tu web, automatiza las conversaciones y aumenta las oportunidades comerciales, garantizando la seguridad y protección de tu base de datos. Integración con tu CRM para un seguimiento inmediato. </p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -456,9 +487,13 @@ $(document).ready(function () {
 
         Swal.fire({
             icon: 'question',
-            title: 'Redes Sociales',
-            text: 'Contenido Redes Sociales',
+            title: 'RRSS',
+            html: '<p style="text-align: justify;"><strong >Redes Sociales:</strong> Potenciamos tus redes sociales posicionando tu marca con contenido de calidad, aumentando seguidores y multiplicando tus ventas. En People tendrás a tu disposición community manager y diseñador que se encargarán de la estrategia de contenidos que tú necesitas.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 
@@ -467,8 +502,12 @@ $(document).ready(function () {
         Swal.fire({
             icon: 'question',
             title: 'Consultoria',
-            text: 'Contenido Consultoria',
+            html: '<p style="text-align: justify;"><strong >Consultoría:</strong> ¡Especialistas en crecimiento! Ofrecemos la mejor asesoría para el crecimiento de tu marca, te ayudamos a transformar tu negocio a través de estrategias adaptadas a tus necesidades, y enfocadas en el uso de la tecnología.</p>',
+            confirmButtonText: 'CERRAR',
+            confirmButtonColor: '#C9D218',
+            confirmButtonTextColor:'#231F36',
             footer: ''
+
         })
     });
 

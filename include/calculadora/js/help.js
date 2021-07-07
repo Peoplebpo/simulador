@@ -715,6 +715,9 @@ $(document).ready(function () {
                 icon: 'error',
                 title: 'ERROR',
                 text: 'Complete todos los campos',
+                confirmButtonText: 'CERRAR',
+                confirmButtonColor: '#C9D218',
+                confirmButtonTextColor:'#231F36'
             })
 
             return false;
@@ -727,6 +730,9 @@ $(document).ready(function () {
                 icon: 'error',
                 title: 'ERROR',
                 text: 'Los Campos Volumetria deben ser Igual o Mayor a 0',
+                confirmButtonText: 'CERRAR',
+                confirmButtonColor: '#C9D218',
+                confirmButtonTextColor:'#231F36',
             })
 
             return false;
@@ -738,6 +744,9 @@ $(document).ready(function () {
                 icon: 'error',
                 title: 'ERROR',
                 text: 'Correo ingresado no es valido',
+                confirmButtonText: 'CERRAR',
+                confirmButtonColor: '#C9D218',
+                confirmButtonTextColor:'#231F36'
             })
 
             return false;
@@ -752,8 +761,11 @@ $(document).ready(function () {
                 width: 800,
                 allowOutsideClick:false,
                 showDenyButton: true,
-                confirmButtonText: `Acepto`,
-                denyButtonText: `Rechazar`,
+                confirmButtonText: 'ACEPTO',
+                confirmButtonColor: '#C9D218',
+                denyButtonText: 'RECHAZAR',
+                denyButtonColor: '#E03552',
+
             }).then((result) => {
                 if (result.isConfirmed) {
 
@@ -783,6 +795,7 @@ $(document).ready(function () {
                         willClose: () => {
                             clearInterval(timerInterval)
                         }
+                        
                     }).then((result) => {
                         /* Read more about handling dismissals below */
                         if (result.dismiss === Swal.DismissReason.timer) {
@@ -817,7 +830,13 @@ $(document).ready(function () {
                     // Fin Enviar datos seleccionados a php para que envie simulacion por correo electronico
 
                 } else if (result.isDenied) {
-                    Swal.fire('No Acepto las Condiciones', '', 'info'),
+                    Swal.fire({
+                        icon: 'info',
+                        title:'No Acepto las Condiciones',
+                        confirmButtonText: 'CERRAR',
+                        confirmButtonColor: '#C9D218',
+                        
+                    }),
                         $('#principal').show();
                 }
 

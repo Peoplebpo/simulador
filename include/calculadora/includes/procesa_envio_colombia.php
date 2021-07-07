@@ -1051,25 +1051,30 @@
                             </h2>
     
                             <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
-                                Mi nombre es Juan y soy el encargado del área comercial en PEOPLE, 
-                                queremos agradecerte por tu interés en nuestros servicios y contarte un 
-                                poco más sobre nosotros, llevamos 18 años en el mercado ayudando a empresas 
-                                como la tuya a prepararse para esta era digital.  
+                            Mi nombre es Elena y soy la ejecutiva del área comercial y experiencia de primer contacto en PEOPLE. 
+                            Queremos agradecer tu interés en nuestros servicios y contarte un poco más sobre nosotros.  
                             </p>
-    
+
                             <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
-                                En PEOPLE somos el aliado estratégico que te ayuda a optimizar los procesos 
-                                de tu empresa basándonos en la sincronización efectiva  entre la tecnología, 
-                                las  personas y el análisis. Nuestros resultados son el reflejo del cumplimiento de 
-                                indicadores, con los mejores estándares mundiales, respecto al desempeño, calidad, 
-                                niveles de servicio, satisfacción de clientes y aumento en la rentabilidad del negocio 
-                                generando más ganancias y utilidades..  
+                            Llevamos 15 años en el mercado ayudando a empresas como la tuya a prepararse para esta era digital. 
+                            Somos el aliado estratégico que te ayudará a optimizar los procesos de tu empresa basándonos en la 
+                            sincronización efectiva entre la tecnología, las personas y el análisis.  
                             </p>
-    
+
                             <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
-                                Encontrarás  un archivo adjunto con la simulación de los servicios que elegiste, 
-                                recuerda que nos adaptamos a las necesidades de tu negocio, dale clic al siguiente 
-                                botón y nos pondremos en contacto de inmediato.   
+                            Nuestros resultados son el reflejo del cumplimiento de indicadores, con los mejores estándares mundiales, 
+                            respecto al desempeño, calidad, niveles de servicio, satisfacción de clientes y aumento en la rentabilidad 
+                            del negocio generando más ganancias y utilidades para quienes confían en nosotros.
+                            </p>
+
+                            <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
+                            Encontrarás un archivo adjunto con la simulación de los servicios que has seleccionado y una aproximación 
+                            de la inversión asociada; recuerda que nos adaptamos a las necesidades de tu negocio... ; )
+                            </p>
+
+                            <p style=" color: #161615;font-family: geometria, sans-serif; font-size: 1rem; text-align: justify;">
+                            Si necesitas profundizar o solventar dudas de manera más directa, dale click al siguiente botón y 
+                            nos pondremos en contacto de inmediato.
                             </p>
                                 
                             

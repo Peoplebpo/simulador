@@ -923,11 +923,12 @@ echo '
     $dompdf->load_html(ob_get_clean());
     $dompdf->render();
     $dompdf->set_option("isPhpEnabled", true); 
+    $dompdf->set_option("isRemoteEnabled", true); 
     $pdf = $dompdf->output(); 
     $filename = "simulacion.pdf";
     file_put_contents($filename, $pdf);
     $dompdf->stream($filename);
-
+    
 
 ?>
 
@@ -1109,7 +1110,7 @@ echo '
                     </div>
     
                     <div style="text-align: center; padding:30px;">
-                        <a href="https://b24-nuujfg.bitrix24.site//volver_llamar" target="_blank" style="background: #C9D218; padding: 20px; color: #373050;
+                        <a href="https://www.peoplebpo.com/new_peoplebpo/callback/" target="_blank" style="background: #C9D218; padding: 20px; color: #373050;
                         border-radius: 26px; text-decoration: none; font-family: geometria, sans-serif;">
                         <img src="https://i.ibb.co/FBrCtBX/call-center.png" style="width: 20PX;"> TE LLAMAMOS</a>
                     </div>
@@ -1179,9 +1180,7 @@ echo '
             
             </div>
     
-                      
-    
-        </div>
+       </div>
     
     
     </body>
@@ -1200,5 +1199,44 @@ echo '
     );
 
     $estadoEnvio = $mail->Send();
+
+
+    //-----------------------------------------------------------------------------
+    //------------- Enviar datos a Bitrix -----------------------------------------
+    //-----------------------------------------------------------------------------
+
+    $first_name = $nombre_solicitante;
+    $phone      = $telefono;
+    $email      = $email_solicitante;
+    $empresa    = $nombre_empresa;
+
+    $queryUrl 	= 'https://peoplebpo.bitrix24.es/rest/27/xbz2x7buwx9qjgvo/crm.lead.add';
+
+    $queryData  = http_build_query(array(
+        
+    'fields' 			=> array(
+    "TITLE" 			=> 'Simulacion Servicios',
+    "NAME" 			    => $first_name,
+    "COMMENTS"			=> $empresa,
+    "STATUS_ID" 		=> "NEW",
+    "OPENED" 			=> "Y",
+    "ASSIGNED_BY_ID" 	=> 29,
+    "PHONE" 			=> array(array("VALUE" => $phone, "VALUE_TYPE" => "WORK" )),
+    "EMAIL" 			=> array(array("VALUE" => $email, "VALUE_TYPE" => "WORK" )),),
+    'params' 			=> array("REGISTER_SONET_EVENT" => "Y")));
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+    CURLOPT_SSL_VERIFYPEER => 0,
+    CURLOPT_POST => 1,
+    CURLOPT_HEADER => 0,
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => $queryUrl,
+    CURLOPT_POSTFIELDS => $queryData,
+    ));
+
+    $result = curl_exec($curl);
+    curl_close($curl);
+
 
 ?>

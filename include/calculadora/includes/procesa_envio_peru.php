@@ -204,15 +204,15 @@
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 
-    require("../../../vendor/phpmailer/class.phpmailer.php");
-    require("../../../vendor/phpmailer/class.smtp.php");
+    require("../lib/phpmailer/class.phpmailer.php");
+    require("../lib/phpmailer/class.smtp.php");
 
     date_default_timezone_set('America/Argentina/Buenos_Aires');
 
     $hora = date("H:i:s");
     $fecha = date("Y-m-d"); 
 
-    unlink('simulacion.pdf');
+    unlink('simulacion_peru.pdf');
 
 // DATOS CLIENTE
 
@@ -369,7 +369,7 @@
                         <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>   
                     </div>';
 
-            $query_diseno = "SELECT * FROM qxcosto_chile WHERE solucion = '$fun_nom_capacidad'";
+            $query_diseno = "SELECT * FROM qxcosto_peru WHERE solucion = '$fun_nom_capacidad'";
             
             $result_diseno                   = mysqli_query($conn, $query_diseno);
             
@@ -411,7 +411,7 @@
 
     //MUESTRA EL CUADRO DE CALCULO DE PERIODICIDAD
 
-            $query_diseno2                   = "SELECT * FROM qxcosto_chile WHERE solucion = '$fun_nom_capacidad'";
+            $query_diseno2                   = "SELECT * FROM qxcosto_peru WHERE solucion = '$fun_nom_capacidad'";
             $result_diseno2                  = mysqli_query($conn, $query_diseno);
 
             global $valor_total_mensual;
@@ -920,7 +920,7 @@
     $dompdf->render();
     $dompdf->set_option("isPhpEnabled", true); 
     $pdf = $dompdf->output(); 
-    $filename = "simulacion.pdf";
+    $filename = "simulacion_peru.pdf";
     file_put_contents($filename, $pdf);
     $dompdf->stream($filename);
 

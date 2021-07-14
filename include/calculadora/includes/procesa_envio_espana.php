@@ -214,7 +214,7 @@
     $hora = date("H:i:s");
     $fecha = date("Y-m-d"); 
 
-    unlink('simulacion.pdf');
+    unlink('simulacion_espana.pdf');
 
 // DATOS CLIENTE
 
@@ -373,7 +373,7 @@ echo '
                         <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>   
                     </div>';
 
-            $query_diseno = "SELECT * FROM qxcosto_chile WHERE solucion = '$fun_nom_capacidad'";
+            $query_diseno = "SELECT * FROM qxcosto_espana WHERE solucion = '$fun_nom_capacidad'";
             
             $result_diseno                   = mysqli_query($conn, $query_diseno);
             
@@ -415,7 +415,7 @@ echo '
 
     //MUESTRA EL CUADRO DE CALCULO DE PERIODICIDAD
 
-            $query_diseno2                   = "SELECT * FROM qxcosto_chile WHERE solucion = '$fun_nom_capacidad'";
+            $query_diseno2                   = "SELECT * FROM qxcosto_espana WHERE solucion = '$fun_nom_capacidad'";
             $result_diseno2                  = mysqli_query($conn, $query_diseno);
 
             global $valor_total_mensual;
@@ -925,7 +925,7 @@ echo '
     $dompdf->set_option("isPhpEnabled", true); 
     $dompdf->set_option("isRemoteEnabled", true); 
     $pdf = $dompdf->output(); 
-    $filename = "simulacion.pdf";
+    $filename = "simulacion_espana.pdf";
     file_put_contents($filename, $pdf);
     $dompdf->stream($filename);
     

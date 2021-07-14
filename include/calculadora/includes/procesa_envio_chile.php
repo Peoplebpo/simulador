@@ -214,7 +214,7 @@
     $hora = date("H:i:s");
     $fecha = date("Y-m-d"); 
 
-    unlink('simulacion.pdf');
+    unlink('simulacion_chile.pdf');
 
 // DATOS CLIENTE
 
@@ -925,7 +925,7 @@ echo '
     $dompdf->set_option("isPhpEnabled", true); 
     $dompdf->set_option("isRemoteEnabled", true); 
     $pdf = $dompdf->output(); 
-    $filename = "simulacion.pdf";
+    $filename = "simulacion_chile.pdf";
     file_put_contents($filename, $pdf);
     $dompdf->stream($filename);
     

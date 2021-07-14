@@ -390,8 +390,6 @@ $(document).ready(function () {
 
     $("#ventas_mes").one("click",(function () {
 
-       // alertify.set({ delay: 8000 });
-       // alertify.success("<h5><label style='color: #FFD700;'>Recuerde!</label></h5> Para que la simulación se ajuste a sus necesidades ingrese una volumetria valida.");
         Swal.fire({
         icon: undefined,
         html: `
@@ -816,9 +814,16 @@ $(document).ready(function () {
                         var valor_pais  = $('#pais').val();
                         var chile       = "includes/procesa_envio_chile.php";
                         var peru        = "includes/procesa_envio_peru.php" ;
-                        var Colombia    = "includes/procesa_envio_colombia.php" ;
+                        var colombia    = "includes/procesa_envio_colombia.php" ;
+                        var latam       = "includes/procesa_envio_latam.php" ;
+                        var usa         = "includes/procesa_envio_usa.php" ;
+                        var espana      = "includes/procesa_envio_espana.php" ;
 
-                        direccion       = (valor_pais == 'Chile') ? chile : (valor_pais == 'Peru') ? peru : Colombia;
+                        direccion       =   (valor_pais == 'Chile') ? chile : 
+                                            (valor_pais == 'Peru') ? peru :
+                                            (valor_pais == 'Colombia') ? colombia : 
+                                            (valor_pais == 'Latam') ? latam : 
+                                            (valor_pais == 'Usa') ? usa : espana;
 
                         $.ajax({
                         type: "POST",

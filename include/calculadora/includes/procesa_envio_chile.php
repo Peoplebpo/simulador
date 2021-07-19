@@ -287,7 +287,7 @@ echo '
 </div>
 
 <div>
-    <label><p class="texto_persona">*Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
+    <label><p class="texto_persona">Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
 </div>
 
 <div>
@@ -974,7 +974,7 @@ echo '
     $mail->AddAddress($destinatario);
     $mail->Subject 	= "🤖 Simulación Costos de Servicios";
     $mensajeHtml 	= nl2br($mensaje);
-    $archivo = 'simulacion.pdf';
+    $archivo = 'simulacion_chile.pdf';
     $mail->AddAttachment($archivo,$archivo);
     $mail->Body 	= '
 
@@ -1217,6 +1217,7 @@ echo '
     'fields' 			=> array(
     "TITLE" 			=> 'Simulacion Servicios',
     "NAME" 			    => $first_name,
+    "UF_CRM_1626102358" => 'prueba rut',
     "COMMENTS"			=> $empresa,
     "STATUS_ID" 		=> "NEW",
     "OPENED" 			=> "Y",

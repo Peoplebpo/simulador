@@ -214,7 +214,7 @@
     $hora = date("H:i:s");
     $fecha = date("Y-m-d"); 
 
-    unlink('simulacion.pdf');
+    unlink('simulacion_latam.pdf');
 
 // DATOS CLIENTE
 
@@ -287,7 +287,7 @@ echo '
 </div>
 
 <div>
-    <label><p class="texto_persona">*Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
+    <label><p class="texto_persona">Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
 </div>
 
 <div>
@@ -925,7 +925,7 @@ echo '
     $dompdf->set_option("isPhpEnabled", true); 
     $dompdf->set_option("isRemoteEnabled", true); 
     $pdf = $dompdf->output(); 
-    $filename = "simulacion.pdf";
+    $filename = "simulacion_latam.pdf";
     file_put_contents($filename, $pdf);
     $dompdf->stream($filename);
     
@@ -974,7 +974,7 @@ echo '
     $mail->AddAddress($destinatario);
     $mail->Subject 	= "🤖 Simulación Costos de Servicios";
     $mensajeHtml 	= nl2br($mensaje);
-    $archivo = 'simulacion.pdf';
+    $archivo = 'simulacion_latam.pdf';
     $mail->AddAttachment($archivo,$archivo);
     $mail->Body 	= '
 

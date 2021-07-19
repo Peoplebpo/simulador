@@ -8,17 +8,17 @@ $(document).ready(function () {
 
     $('#despedida').hide();
 
-    $('#div_s-marca').hide();
-    $('#div_s-call').hide();
-    $('#div_s-ejecutivos').hide();
-    $('#div_s-marketing').hide();
-    $('#div_s-office').hide();
-    $('#div_s-marketing').hide();
-    $('#div_s-rrss').hide();
-    $('#div_s-consultoria').hide();
-    $('#div_s-ecommerce').hide();
-    $('#div_s-sac').hide();
-    $('#div_s-whatsapp').hide();
+    $('#div_s-marca').show();
+    $('#div_s-call').show();
+    $('#div_s-ejecutivos').show();
+    $('#div_s-marketing').show();
+    $('#div_s-office').show();
+    $('#div_s-marketing').show();
+    $('#div_s-rrss').show();
+    $('#div_s-consultoria').show();
+    $('#div_s-ecommerce').show();
+    $('#div_s-sac').show();
+    $('#div_s-whatsapp').show();
 
     $('#div_c-rrss').hide();
     $('#div_c-ivr').hide();

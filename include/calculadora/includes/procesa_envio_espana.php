@@ -287,7 +287,7 @@ echo '
 </div>
 
 <div>
-    <label><p class="texto_persona">*Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
+    <label><p class="texto_persona">Gracias por confiar en nosotros. En respuesta a su solicitud, es de nuestro agrado adjuntar la siguiente simulación mensual de contratacion de servicios de acuerdo al detalle indicado</p></label>
 </div>
 
 <div>
@@ -370,7 +370,7 @@ echo '
     
                     <div class="divTableCell" style="width: 68%;">
                         <label class="texto_nombre_capacidad">'.$fun_nom_capacidad.'</label>
-                        <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>   
+                        <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">€</label></div>   
                     </div>';
 
             $query_diseno = "SELECT * FROM qxcosto_espana WHERE solucion = '$fun_nom_capacidad'";
@@ -802,7 +802,7 @@ echo '
     
                     <div class="divTableCell" style="width: 75%;">
                         <label class="valor_nombre_periodicidad">TOTAL MENSUAL</label>
-                        <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>   
+                        <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">€</label></div>   
                     </div>
     
                     <div class="divTableCell" style="width: 25%; text-align: right;">
@@ -815,7 +815,7 @@ echo '
     
             <div class="divTableCell" style="width: 75%;">
                 <label class="valor_nombre_periodicidad">TOTAL BAJO DEMANDA</label>
-                <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>  
+                <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">€</label></div>  
             </div>
     
             <div class="divTableCell" style="width: 25%; text-align: right;">
@@ -828,7 +828,7 @@ echo '
     
             <div class="divTableCell" style="width: 75%;">
                 <label class="valor_nombre_periodicidad">TOTAL UNICO</label>
-                <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">$</label></div>    
+                <div style="float: right;"><label class="valor_nombre_capacidad" style="text-align: right;">€</label></div>    
             </div>
     
             <div class="divTableCell" style="width: 25%; text-align: right;">
@@ -859,7 +859,7 @@ echo '
     
                     <div class="divTableCell" style="width: 75%; text-align: right; vertical-align: bottom; padding-right: 0.5rem;">
                         <label class="texto_nombre_capacidad">TOTAL NETO :</label>
-                        <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">$</label></div>    
+                        <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">€</label></div>    
                     </div>
     
                     <div class="divTableCell" style="width: 25%; vertical-align: bottom; text-align: right;">
@@ -872,7 +872,7 @@ echo '
     
             <div class="divTableCell" style="width: 75%; text-align: right; vertical-align: bottom; padding-right: 0.5rem;">
                 <label class="texto_nombre_capacidad">IVA :</label>
-                <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">$</label></div>     
+                <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">€</label></div>     
             </div>
     
             <div class="divTableCell" style="width: 25%; vertical-align: bottom; text-align: right;">
@@ -885,7 +885,7 @@ echo '
     
             <div class="divTableCell" style="width: 75%; text-align: right; vertical-align: bottom; padding-right: 0.5rem;">
                 <label class="texto_nombre_capacidad">TOTAL NETO +IVA :</label>
-                <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">$</label></div>      
+                <div style="float: right;"><label class="valor_texto_totales" style="text-align: left;">€</label></div>      
             </div>
     
             <div class="divTableCell" style="width: 25%; vertical-align: bottom; text-align: right;">
@@ -974,7 +974,7 @@ echo '
     $mail->AddAddress($destinatario);
     $mail->Subject 	= "🤖 Simulación Costos de Servicios";
     $mensajeHtml 	= nl2br($mensaje);
-    $archivo = 'simulacion.pdf';
+    $archivo = 'simulacion_espana.pdf';
     $mail->AddAttachment($archivo,$archivo);
     $mail->Body 	= '
 

@@ -1171,30 +1171,34 @@
 
     $estadoEnvio = $mail->Send();
 
-    
     //-----------------------------------------------------------------------------
-    //------------- Enviar datos a Bitrix -----------------------------------------
+    //------------- Enviar datos a Bitrix NEGOCIACION------------------------------
     //-----------------------------------------------------------------------------
 
     $first_name = $nombre_solicitante;
     $phone      = $telefono;
     $email      = $email_solicitante;
     $empresa    = $nombre_empresa;
+    $rut        = $rut;
+    $pais       = $pais;
 
     $queryUrl 	= 'https://peoplebpo.bitrix24.es/rest/27/xbz2x7buwx9qjgvo/crm.lead.add';
 
     $queryData  = http_build_query(array(
         
-    'fields' 			=> array(
-    "TITLE" 			=> 'Simulacion Servicios',
-    "NAME" 			    => $first_name,
-    "COMMENTS"			=> $empresa,
-    "STATUS_ID" 		=> "NEW",
-    "OPENED" 			=> "Y",
-    "ASSIGNED_BY_ID" 	=> 29,
-    "PHONE" 			=> array(array("VALUE" => $phone, "VALUE_TYPE" => "WORK" )),
-    "EMAIL" 			=> array(array("VALUE" => $email, "VALUE_TYPE" => "WORK" )),),
-    'params' 			=> array("REGISTER_SONET_EVENT" => "Y")));
+    'fields' 			    => array(
+    "TITLE" 			    => 'Simulacion Servicios', // titulo negociacion
+    "NAME"               	=> $first_name, // nombre del cliente
+    "COMPANY_TITLE"      	=> $empresa, // nombre empresa
+    "UF_CRM_60F589640EA61" 	=> $rut, // Rut cliente
+    "ADDRESS_COUNTRY" 	    => $pais,
+    "ASSIGNED_BY_ID" 	    => 29,
+    "PHONE" 			    => array(array("VALUE" => $phone, "VALUE_TYPE" => "WORK" )),
+    "EMAIL" 			    => array(array("VALUE" => $email, "VALUE_TYPE" => "WORK" )),
+
+  
+    )
+    ,));
 
     $curl = curl_init();
     curl_setopt_array($curl, array(

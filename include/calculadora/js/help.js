@@ -408,7 +408,7 @@ $(document).ready(function () {
         position: 'bottom-start',
         background: '#c9d219',
         padding: '1px',
-        timer:8000
+        timer:3000
     })
         })
     );
@@ -755,7 +755,7 @@ $(document).ready(function () {
 
             Swal.fire({
                 title: 'Condiciones Manejo de Datos',
-                text: `Peoplebpo utilizara su información exclusivamente para enviar simulación de costos de servicio a través de Email. Recuerde que para enviar la simulación, debe Aceptar este aviso pulsando el botón de "Aceptar", o rechazar el uso de la información entregada pulsando "Rechazar".`,
+                html: '<p style="text-align: justify;"><strong>PEOPLE</strong> utilizara su información exclusivamente para enviar simulación de costos de servicio a través de Email. Recuerde que para enviar la simulación, debe Aceptar este aviso pulsando el botón de "Aceptar", o rechazar el uso de la información entregada pulsando "Rechazar". </p>',
                 width: 800,
                 allowOutsideClick:false,
                 showDenyButton: true,
@@ -763,6 +763,7 @@ $(document).ready(function () {
                 confirmButtonColor: '#C9D218',
                 denyButtonText: 'RECHAZAR',
                 denyButtonColor: '#E03552',
+               
 
             }).then((result) => {
                 if (result.isConfirmed) {
@@ -774,25 +775,12 @@ $(document).ready(function () {
                     let timerInterval
                     Swal.fire({
                         title: 'ESPERE POR FAVOR!',
-                        html: 'Creando Simulación</br><b></b>',
                         timer: 5000,
-                        allowOutsideClick:false,
-                        timerProgressBar: true,
-                        didOpen: () => {
-                            Swal.showLoading()
-                            timerInterval = setInterval(() => {
-                                const content = Swal.getContent()
-                                if (content) {
-                                    const b = content.querySelector('b')
-                                    if (b) {
-                                        b.textContent = Swal.getTimerLeft()
-                                    }
-                                }
-                            }, 100)
-                        },
-                        willClose: () => {
-                            clearInterval(timerInterval)
-                        }
+                        imageUrl:'https://i.ibb.co/PT4fRMF/978.gif',
+                        text:'Cada vez mas cerca de la solución mas sencilla para la transformación digital y aumentar tu rentabilidad',
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#C9D218',
+                        
                         
                     }).then((result) => {
                         /* Read more about handling dismissals below */
@@ -800,8 +788,8 @@ $(document).ready(function () {
                             $('#despedida').show();
                             Swal.fire({
                                 position: 'center',
-                                icon: 'success',
-                                title: 'Simulación Creada',
+                                title: '¡FELICIDADES SIMULACIÓN CREADA!',
+                                imageUrl:'https://i.ibb.co/wz1tpcq/Trazado-7046.png',
                                 showConfirmButton:false,
                                 allowOutsideClick:false,
                                 text: 'Esta fue Enviada al correo: '+ correo,
@@ -836,8 +824,9 @@ $(document).ready(function () {
 
                 } else if (result.isDenied) {
                     Swal.fire({
-                        icon: 'info',
-                        title:'No Acepto las Condiciones',
+
+                        html: '<div><img src="https://i.ibb.co/tD9ccMD/manoc.png"></div>',
+                        title: 'No acepto las Condiciones',
                         confirmButtonText: 'CERRAR',
                         confirmButtonColor: '#C9D218',
                         

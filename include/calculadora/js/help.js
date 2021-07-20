@@ -755,7 +755,7 @@ $(document).ready(function () {
 
             Swal.fire({
                 title: 'Condiciones Manejo de Datos',
-                html: '<p style="text-align: justify;"><strong>PEOPLE</strong> utilizara su información exclusivamente para enviar simulación de costos de servicio a través de Email. Recuerde que para enviar la simulación, debe Aceptar este aviso pulsando el botón de "Aceptar", o rechazar el uso de la información entregada pulsando "Rechazar". </p>',
+                html: '<p style="text-align: justify;"><strong>PEOPLE</strong> utilizará su información exclusivamente para enviar simulación de costos de servicio a través de Email.</p> <p style="text-align: justify;">Recuerde que para enviar la simulación, debe aceptar este aviso pulsando el botón de "Aceptar", o rechazar el uso de la información entregada pulsando "Rechazar". </p>',
                 width: 800,
                 allowOutsideClick:false,
                 showDenyButton: true,

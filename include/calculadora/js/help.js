@@ -792,7 +792,7 @@ $(document).ready(function () {
                                 imageUrl:'https://i.ibb.co/wz1tpcq/Trazado-7046.png',
                                 showConfirmButton:false,
                                 allowOutsideClick:false,
-                                text: 'Esta fue Enviada al correo: '+ correo,
+                                text: 'Estamos procesando tu simulación. En unos instantes la enviaremos a su correo: '+ correo,
                             })
 
                             return false;

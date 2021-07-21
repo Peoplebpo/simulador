@@ -78,11 +78,11 @@
                     </div>
                   </div>
                   <div class="form-row mt-4">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-3">
                       <input class="multisteps-form__input form-control borde" id="telefono" name="telefono"
                         type="number" placeholder="Teléfono Contacto" autocomplete="11" />
                     </div>
-                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                    <div class="col-12 col-sm-3 mt-4 mt-sm-0">
                       <select class="multisteps-form__select form-control borde select_letra " id="pais" name="pais">
                         <option value="" selected="selected">País</option>
                         <option value="Chile">Chile</option>
@@ -91,6 +91,11 @@
                         <option value="Usa">Usa</option>
                         <option value="Espana">España</option>
                       </select>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                      <input class="multisteps-form__input form-control borde" id="email" name="email" type="email"
+                        placeholder="Confirme Email Contacto" autocomplete="ÑÖcompletes"
+                        onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" />
                     </div>
                   </div>
                   <div class="button-row d-flex mt-4">

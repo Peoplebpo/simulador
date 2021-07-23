@@ -926,6 +926,7 @@
 
     $mensaje 		= "Mensaje Simulación Solicitada";
     $destinatario 	= $email_solicitante;
+    $destinatario2 	= "crm@peoplebpo.com";
     $nombre 		= "Peoplebpo";
     $email 			= "noreply@peoplebpo.com";
     $smtpHost 		= "mail.peoplebpo.com"; 
@@ -943,6 +944,7 @@
     $mail->From 	= $email;
     $mail->FromName = $nombre;
     $mail->AddAddress($destinatario);
+    $mail->AddAddress($destinatario2);
     $mail->Subject 	= "🤖 Simulación Costos de Servicios";
     $mensajeHtml 	= nl2br($mensaje);
     $archivo = 'simulacion_colombia.pdf';

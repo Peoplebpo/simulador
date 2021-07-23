@@ -20,6 +20,27 @@
 
   <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
 
+  <script>
+
+// confirma email contacto
+
+function emailCheck() {
+document.getElementById("email2").value=document.getElementById("email2").value.toUpperCase();
+
+var email       = document.getElementById("email").value;
+var emailCheck  = document.getElementById("email2").value;
+
+
+if (email === emailCheck) {
+    document.getElementById('boton2').disabled = false;
+    console.log("coinciden")
+} else {
+    document.getElementById('boton2').disabled = true;
+    console.log("no coinciden")
+}
+}
+
+  </script>
 
 </head>
 
@@ -93,14 +114,13 @@
                       </select>
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-                      <input class="multisteps-form__input form-control borde" id="email" name="email" type="email"
-                        placeholder="Confirme Email Contacto" autocomplete="ÑÖcompletes"
-                        onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" />
+                      <input class="multisteps-form__input form-control borde" id="email2" name="email2" type="email"
+                        placeholder="Confirme Email Contacto" autocomplete="ÑÖcompletes" onkeyup="emailCheck()" />
                     </div>
                   </div>
                   <div class="button-row d-flex mt-4">
                     <button class="btn ml-auto js-btn-next borde" type="button" title="Next"
-                      style="background-color: #c9d218; font-family: 'Geometria', sans-serif; font-weight: bold; color:#373050;">SIGUIENTE
+                      style="background-color: #c9d218; font-family: 'Geometria', sans-serif; font-weight: bold; color:#373050;" id="boton2" disabled="disabled">SIGUIENTE
                       <i class="bi bi-chevron-double-right" style="color: white; font-weight: bold;"></i></button>
                   </div>
                 </div>

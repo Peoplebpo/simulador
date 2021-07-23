@@ -357,11 +357,11 @@ $(document).ready(function () {
 
     // inicio cuadro mensajes descripcion de ayuda 
 
-    $("#email").one("click",(function () {
-      
-    Swal.fire({
-        icon: undefined,
-        html: `
+    $("#email").one("click", (function () {
+
+        Swal.fire({
+            icon: undefined,
+            html: `
         <div class="alert d-flex align-items-center" role="alert"
         style="background-color: #c9d219; padding: 5px; width: 320px;">
         <p><span style="color: #322a45; font-size: 14px;">RECUERDA</span>
@@ -372,27 +372,26 @@ $(document).ready(function () {
         <img src="images/advertencia.png">
         </div>
         </div>`,
-        toast: true,
-        showConfirmButton:false,
-        position: 'bottom-start',
-        background: '#c9d219',
-        padding: '1px',
-        timer:8000
-    })  
-
-
-
-
-
-
+            toast: true,
+            showConfirmButton: false,
+            position: 'bottom-start',
+            background: '#c9d219',
+            padding: '1px',
+            timer: 8000
         })
-    );
 
-    $("#ventas_mes").one("click",(function () {
+
+
+
+
+
+    }));
+
+    $("#ventas_mes").one("click", (function () {
 
         Swal.fire({
-        icon: undefined,
-        html: `
+            icon: undefined,
+            html: `
         <div class="alert d-flex align-items-center" role="alert"
         style="background-color: #c9d219; padding: 5px; width: 320px;">
         <p><span style="color: #322a45; font-size: 14px;">RECUERDA</span>
@@ -403,15 +402,14 @@ $(document).ready(function () {
         <img src="images/advertencia.png">
         </div>
         </div>`,
-        toast: true,
-        showConfirmButton:false,
-        position: 'bottom-start',
-        background: '#c9d219',
-        padding: '1px',
-        timer:3000
-    })
+            toast: true,
+            showConfirmButton: false,
+            position: 'bottom-start',
+            background: '#c9d219',
+            padding: '1px',
+            timer: 3000
         })
-    );
+    }));
 
     $("#help_diseno_marca, #lb_diseno_marca").click(function () {
 
@@ -421,7 +419,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Diseño e identidad de Marca:</strong> La creación de una marca inolvidable es la clave para atraer a tu público objetivo y posibles clientes. Más que un nombre y un logo, creamos un concepto que transmita tu propósito y filosofía, definiendo tu identidad corporativa, storytelling, tono de comunicación, aplicaciones de marca, diseño de logo, isotipo, packing y mucho más</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
         })
     });
@@ -434,7 +432,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Tienda Online - Ecommerce:</strong> Empieza a vender tus productos y servicios en línea, creamos tu tienda online a medida según tus necesidades, fácil administración, carrito de compras, pagos seguros. Tu proyecto digital fácil, rápido y automatizado.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -448,7 +446,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Servicio de Atención al Cliente SAC:</strong> Nos encargamos de la gestión de servicio al cliente. Mejora las interacciones con tus clientes ofreciendo una experiencia conectada con servicios todo en uno, atención al cliente, ventas, cobranzas y más. Usamos la Inteligencia Artificial para transformar tu empresa.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -462,7 +460,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Marketing Digital:</strong> En estos últimos años la presencia digital se ha convertido en un paso esencial para toda marca. En People creamos estrategias de marketing digital que llegan a tu audiencia ideal, en el momento y lugar adecuado cautivando y convirtiendo ese contacto en más ventas. </p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -476,7 +474,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Botón de Llamada desde tu Web:</strong> Ofrece a tus clientes la posibilidad de ponerse en contacto de forma inmediata, desde cualquier parte del mundo tus clientes estarán a un click, ahorra costos y tiempo aumentando tus ventas, estableciendo relaciones más estrechas con tus clientes, mejorando tu servicio al cliente y mucho más. </p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -490,7 +488,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Ejecutivos:</strong> Humanizamos tus procesos con ejecutivos orientados en gestionar eficientemente las diferentes interacciones con tus clientes como asesoría, venta, postventa, recobros y mucho más.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -504,7 +502,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Back Office:</strong> ¡Te hacemos la vida más fácil! Mientras te enfocas en que tu negocio crezca, nosotros gestionamos de manera calificada todos los procesos administrativos, contabilidad, seguimiento de clientes, gestión de recursos humanos y más.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -518,7 +516,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Botón Whatsapp en Tu Web:</strong> ¡Conversa con tus clientes! Acelera tus ventas con el botón de whatsapp en tu web, automatiza las conversaciones y aumenta las oportunidades comerciales, garantizando la seguridad y protección de tu base de datos. Integración con tu CRM para un seguimiento inmediato. </p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -532,7 +530,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Redes Sociales:</strong> Potenciamos tus redes sociales posicionando tu marca con contenido de calidad, aumentando seguidores y multiplicando tus ventas. En People tendrás a tu disposición community manager y diseñador que se encargarán de la estrategia de contenidos que tú necesitas.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -546,7 +544,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Consultoría:</strong> ¡Especialistas en crecimiento! Ofrecemos la mejor asesoría para el crecimiento de tu marca, te ayudamos a transformar tu negocio a través de estrategias adaptadas a tus necesidades, y enfocadas en el uso de la tecnología.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -560,7 +558,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Redes Sociales:</strong> Potenciamos tus redes sociales posicionando tu marca con contenido de calidad, aumentando seguidores y multiplicando tus ventas. En People tendrás a tu disposición community manager y diseñador que se encargarán de la estrategia de contenidos que tú necesitas.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -574,7 +572,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >IVR (Respuesta de Voz Interactiva):</strong> Mejora tu productividad automatizando consultas repetitivas. Crea un sistema de IVR para enrutar llamadas de manera precisa utilizando el reconocimiento de voz. Logra una campaña de voz que cumpla 100% con la regulación. ¡IVR - Poderoso y fácil de usar!.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -588,7 +586,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >BPO (Externalización de procesos):</strong> Destaca tu negocio con el servicio de externalización de procesos empresariales PEOPLE. Brindamos apoyo en sus procesos adaptando sus necesidades en oportunidades de negocio que generan valores agregados.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -612,7 +610,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Contact Center:</strong> Un centro de llamadas potente que facilita el contacto con tus clientes, tenemos herramientas y servicios multicanal brindando soluciones de la más alta calidad al menor costo. ¡Aumenta tus ganancias con resultados de calidad!</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -626,7 +624,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Tienda Online - Ecommerce:</strong> Empieza a vender tus productos y servicios en línea, creamos tu tienda online a medida según tus necesidades, fácil administración, carrito de compras, pagos seguros. Tu proyecto digital fácil, rápido y automatizado.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -640,7 +638,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Customer Experience:</strong> Brinda experiencias únicas pensadas en cada cliente, garantizando que cada interacción con su marca sea un éxito.  Cliente Incógnito, Valoración de Experiencia, Investigación, Desarrollo de Experiencia, y muchos más.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -654,7 +652,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >CRM - (Gestión de clientes):</strong> Da a los clientes una resolución rápida y fácil a sus problemas. Le ayudamos a ofrecer una experiencia conectada con un conjunto de servicios de colaboración todo en uno. ¡Un CRM que reúne todas sus funciones empresariales!  </p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -668,7 +666,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Consultoría:</strong> ¡Especialistas en crecimiento! Ofrecemos la mejor asesoría para el crecimiento de tu marca, te ayudamos a transformar tu negocio a través de estrategias adaptadas a tus necesidades, y enfocadas en el uso de la tecnología.</p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -682,7 +680,7 @@ $(document).ready(function () {
             html: '<p style="text-align: justify;"><strong >Marketing Digital:</strong> En estos últimos años la presencia digital se ha convertido en un paso esencial para toda marca. En People creamos estrategias de marketing digital que llegan a tu audiencia ideal, en el momento y lugar adecuado cautivando y convirtiendo ese contacto en más ventas. </p>',
             confirmButtonText: 'CERRAR',
             confirmButtonColor: '#C9D218',
-            confirmButtonTextColor:'#231F36',
+            confirmButtonTextColor: '#231F36',
             footer: ''
 
         })
@@ -715,12 +713,12 @@ $(document).ready(function () {
                 text: 'Complete todos los campos',
                 confirmButtonText: 'CERRAR',
                 confirmButtonColor: '#C9D218',
-                confirmButtonTextColor:'#231F36'
+                confirmButtonTextColor: '#231F36'
             })
 
             return false;
 
-        }else if (ventas_mes == '' | interacciones_mes == '' | potenciales_mes == '') {
+        } else if (ventas_mes == '' | interacciones_mes == '' | potenciales_mes == '') {
 
             Swal.fire({
                 position: 'center',
@@ -730,7 +728,7 @@ $(document).ready(function () {
                 text: 'Los Campos Volumetria deben ser Igual o Mayor a 0',
                 confirmButtonText: 'CERRAR',
                 confirmButtonColor: '#C9D218',
-                confirmButtonTextColor:'#231F36',
+                confirmButtonTextColor: '#231F36',
             })
 
             return false;
@@ -744,7 +742,7 @@ $(document).ready(function () {
                 text: 'Correo ingresado no es valido',
                 confirmButtonText: 'CERRAR',
                 confirmButtonColor: '#C9D218',
-                confirmButtonTextColor:'#231F36'
+                confirmButtonTextColor: '#231F36'
             })
 
             return false;
@@ -757,13 +755,13 @@ $(document).ready(function () {
                 title: 'Condiciones Manejo de Datos',
                 html: '<p style="text-align: justify;"><strong>PEOPLE</strong> utilizará su información exclusivamente para enviar simulación de costos de servicio a través de Email.</p> <p style="text-align: justify;">Recuerde que para enviar la simulación, debe aceptar este aviso pulsando el botón de "Aceptar", o rechazar el uso de la información entregada pulsando "Rechazar". </p>',
                 width: 800,
-                allowOutsideClick:false,
+                allowOutsideClick: false,
                 showDenyButton: true,
                 confirmButtonText: 'ACEPTO',
                 confirmButtonColor: '#C9D218',
                 denyButtonText: 'RECHAZAR',
                 denyButtonColor: '#E03552',
-               
+
 
             }).then((result) => {
                 if (result.isConfirmed) {
@@ -776,12 +774,12 @@ $(document).ready(function () {
                     Swal.fire({
                         title: 'ESPERE POR FAVOR!',
                         timer: 5000,
-                        imageUrl:'https://i.ibb.co/PT4fRMF/978.gif',
-                        text:'Cada vez mas cerca de la solución mas sencilla para la transformación digital y aumentar tu rentabilidad',
+                        imageUrl: 'https://i.ibb.co/PT4fRMF/978.gif',
+                        text: 'Cada vez mas cerca de la solución mas sencilla para la transformación digital y aumentar tu rentabilidad',
                         confirmButtonText: 'OK',
                         confirmButtonColor: '#C9D218',
-                        
-                        
+
+
                     }).then((result) => {
                         /* Read more about handling dismissals below */
                         if (result.dismiss === Swal.DismissReason.timer) {
@@ -789,31 +787,31 @@ $(document).ready(function () {
                             Swal.fire({
                                 position: 'center',
                                 title: '¡FELICIDADES SIMULACIÓN CREADA!',
-                                imageUrl:'https://i.ibb.co/wz1tpcq/Trazado-7046.png',
-                                showConfirmButton:false,
-                                allowOutsideClick:false,
-                                text: 'Estamos procesando tu simulación. En unos instantes la enviaremos a su correo: '+ correo,
+                                imageUrl: 'https://i.ibb.co/wz1tpcq/Trazado-7046.png',
+                                showConfirmButton: false,
+                                allowOutsideClick: false,
+                                text: 'Estamos procesando tu simulación. En unos instantes la enviaremos a su correo: ' + correo,
                             })
 
                             return false;
                         }
                     })
 
-                        var valor_pais  = $('#pais').val();
-                        var chile       = "includes/procesa_envio_chile.php";
-                        var peru        = "includes/procesa_envio_peru.php" ;
-                        var colombia    = "includes/procesa_envio_colombia.php" ;
-                        var latam       = "includes/procesa_envio_latam.php" ;
-                        var usa         = "includes/procesa_envio_usa.php" ;
-                        var espana      = "includes/procesa_envio_espana.php" ;
+                    var valor_pais = $('#pais').val();
+                    var chile = "includes/procesa_envio_chile.php";
+                    var peru = "includes/procesa_envio_peru.php";
+                    var colombia = "includes/procesa_envio_colombia.php";
+                    var latam = "includes/procesa_envio_latam.php";
+                    var usa = "includes/procesa_envio_usa.php";
+                    var espana = "includes/procesa_envio_espana.php";
 
-                        direccion       =   (valor_pais == 'Chile') ? chile : 
-                                            (valor_pais == 'Peru') ? peru :
-                                            (valor_pais == 'Colombia') ? colombia : 
-                                            (valor_pais == 'Latam') ? latam : 
-                                            (valor_pais == 'Usa') ? usa : espana;
+                    direccion = (valor_pais == 'Chile') ? chile :
+                        (valor_pais == 'Peru') ? peru :
+                        (valor_pais == 'Colombia') ? colombia :
+                        (valor_pais == 'Latam') ? latam :
+                        (valor_pais == 'Usa') ? usa : espana;
 
-                        $.ajax({
+                    $.ajax({
                         type: "POST",
                         url: direccion,
                         data: datos,
@@ -825,12 +823,12 @@ $(document).ready(function () {
                 } else if (result.isDenied) {
                     Swal.fire({
 
-                        html: '<div><img src="https://i.ibb.co/tD9ccMD/manoc.png"></div>',
-                        title: 'No acepto las Condiciones',
-                        confirmButtonText: 'CERRAR',
-                        confirmButtonColor: '#C9D218',
-                        
-                    }),
+                            html: '<div><img src="https://i.ibb.co/tD9ccMD/manoc.png"></div>',
+                            title: 'No acepto las Condiciones',
+                            confirmButtonText: 'CERRAR',
+                            confirmButtonColor: '#C9D218',
+
+                        }),
                         $('#principal').show();
                 }
 
